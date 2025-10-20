@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pesanan - PKM Percetakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <div id="navbar"></div>
+    
+    <div class="container mx-auto px-4 py-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 class="text-3xl font-bold text-gray-800 mb-2">Pesanan</h1>
+          <p class="text-gray-600">Kelola pesanan pelanggan</p>
+          <div id="role-info" class="mt-4"></div>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No. Order</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tanggal</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="tbody" class="bg-white divide-y divide-gray-200">
+                <!-- Orders will be populated here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-6 flex flex-col sm:flex-row gap-4">
+          <a href="/" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 text-center">
+            <div class="flex items-center justify-center">
+              <div class="text-lg mr-2">🏠</div>
+              Home
+            </div>
+          </a>
+          <a href="/cart" class="flex-1 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 text-center">
+            <div class="flex items-center justify-center">
+              <div class="text-lg mr-2">🛒</div>
+              Keranjang
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <script src="/js/nav.js"></script>
+    <script src="/js/orders.js"></script>
+  </body>
+</html>

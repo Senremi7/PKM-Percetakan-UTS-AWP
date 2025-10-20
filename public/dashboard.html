@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - PKM Percetakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <div id="navbar"></div>
+    
+    <div class="container mx-auto px-4 py-8">
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 id="greet" class="text-3xl font-bold text-gray-800 mb-2">Dashboard</h1>
+          <p class="text-gray-600">Selamat datang di sistem manajemen percetakan</p>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">Quick Actions</h2>
+          <div id="quick" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+            <div class="flex items-center">
+              <div class="p-3 bg-blue-100 rounded-lg">
+                <div class="text-2xl text-blue-600">📊</div>
+              </div>
+              <div class="ml-4">
+                <p class="text-sm font-medium text-gray-600">Total Produk</p>
+                <p class="text-2xl font-bold text-gray-800">-</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+            <div class="flex items-center">
+              <div class="p-3 bg-green-100 rounded-lg">
+                <div class="text-2xl text-green-600">📦</div>
+              </div>
+              <div class="ml-4">
+                <p class="text-sm font-medium text-gray-600">Total Pesanan</p>
+                <p class="text-2xl font-bold text-gray-800">-</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
+            <div class="flex items-center">
+              <div class="p-3 bg-purple-100 rounded-lg">
+                <div class="text-2xl text-purple-600">💰</div>
+              </div>
+              <div class="ml-4">
+                <p class="text-sm font-medium text-gray-600">Pendapatan</p>
+                <p class="text-2xl font-bold text-gray-800">-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div id="footer"></div>
+    
+    <script src="/js/nav.js"></script>
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>

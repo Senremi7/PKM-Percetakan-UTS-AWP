@@ -1,0 +1,49 @@
+body { font-family: Arial, Helvetica, sans-serif; background: #f7f7f9; margin: 0; }
+.container { max-width: 960px; margin: 32px auto; padding: 0 16px; }
+.header { display: flex; align-items: center; justify-content: space-between; }
+.menu { list-style: none; padding: 0; display: flex; gap: 12px; }
+.menu a { text-decoration: none; background: #eef; padding: 8px 12px; border-radius: 6px; display: inline-flex; gap: 6px; align-items: center; }
+.icon { opacity: 0.8; }
+.table { width: 100%; border-collapse: collapse; margin-top: 16px; background: white; }
+.table th, .table td { border: 1px solid #ddd; padding: 8px; }
+.table th { background: #f0f0f0; text-align: left; }
+.btn { display: inline-block; background: #1976d2; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; }
+.form { display: grid; gap: 8px; max-width: 560px; }
+.form input, .form textarea, .form select { padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.form button { background: #1976d2; color: #fff; border: 0; border-radius: 6px; padding: 10px 14px; cursor: pointer; }
+.alert { padding: 8px 12px; border-radius: 6px; }
+.alert-error { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+
+/* Navbar */
+.navbar { display: flex; align-items: center; justify-content: space-between; background:#fff; border-bottom:1px solid #e5e5e5; padding: 10px 16px; position: sticky; top:0; z-index: 10; }
+.nav-brand a { font-weight: 700; color: #1976d2; text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 12px; margin: 0; padding: 0; }
+.nav-links a, .linklike { text-decoration: none; color:#333; background: transparent; border: 0; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+.nav-links a:hover, .linklike:hover { background: #f2f2f2; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #1976d2, #42a5f5); color:#fff; padding: 48px 16px; text-align: center; }
+.hero h1 { margin: 0 0 8px; }
+.hero p { margin: 0; opacity: 0.95; }
+
+/* Product grid */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 20px; }
+.product-card { background: #fff; border: 1px solid #eee; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.product-card__body { padding: 12px 14px; }
+.product-card__title { margin: 0 0 6px; font-size: 18px; }
+.product-card__desc { margin: 0 0 8px; color: #555; font-size: 14px; min-height: 40px; }
+.product-card__price { margin: 0; font-weight: 700; color: #1976d2; }
+.product-card__actions { padding: 12px 14px; border-top: 1px solid #eee; }
+
+/* Print styles */
+/* Utility */
+.print-only { display: none; }
+
+@media print {
+  .navbar, .btn, form, .header, .menu { display: none !important; }
+  body { background: #fff; }
+  .container { margin: 0; padding: 0; max-width: 100%; }
+  .table { width: 100%; border-collapse: collapse; }
+  .table th, .table td { border: 1px solid #000; }
+  .print-only { display: block !important; }
+}

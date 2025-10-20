@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit Produk - PKM Percetakan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <div id="navbar"></div>
+    
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-md w-full space-y-8">
+        <div>
+          <div class="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-blue-100">
+            <div class="text-2xl">✏️</div>
+          </div>
+          <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            Edit Produk
+          </h2>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Ubah informasi produk
+          </p>
+        </div>
+        
+        <div id="error" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg" style="display:none;"></div>
+        
+        <form id="form" class="mt-8 space-y-6">
+          <div class="space-y-4">
+            <div>
+              <label for="nama_produk" class="block text-sm font-medium text-gray-700">Nama Produk</label>
+              <input id="nama_produk" name="nama_produk" type="text" required 
+                     class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" 
+                     placeholder="Masukkan nama produk">
+            </div>
+            
+            <div>
+              <label for="deskripsi" class="block text-sm font-medium text-gray-700">Deskripsi</label>
+              <textarea id="deskripsi" name="deskripsi" rows="3"
+                        class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" 
+                        placeholder="Masukkan deskripsi produk"></textarea>
+            </div>
+            
+            <div>
+              <label for="harga" class="block text-sm font-medium text-gray-700">Harga</label>
+              <input id="harga" name="harga" type="number" step="0.01" min="0" required 
+                     class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" 
+                     placeholder="Masukkan harga">
+            </div>
+            
+            <div>
+              <label for="satuan" class="block text-sm font-medium text-gray-700">Satuan</label>
+              <input id="satuan" name="satuan" type="text" required 
+                     class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" 
+                     placeholder="Masukkan satuan">
+            </div>
+            
+            <div>
+              <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+              <select id="status" name="status" 
+                      class="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-3">
+            <button type="submit" 
+                    class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+              <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                <div class="text-lg">💾</div>
+              </span>
+              Simpan
+            </button>
+            
+            <a href="/products" 
+               class="w-full flex justify-center py-2 px-4 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+              Batal
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <script src="/js/nav.js"></script>
+    <script src="/js/products_edit.js"></script>
+  </body>
+</html>
