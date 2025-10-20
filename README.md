@@ -1,6 +1,9 @@
-# PKM-Percetakan-UTS-AWP
 Website address =
 http://46.250.230.45:3203
+
+Website Backup =
+https://pkm-percetakan-uts-awp.vercel.app
+(Lebih lemot)
 
 User Login and Password =
 - ADMIN
@@ -34,16 +37,18 @@ Jeremiah E.J =
 - Mengatur dan mengconfigurasi server untuk website hosting dan cloud database hosting
 - Mendesign tampilan UI walaupun masih prototype
 - Membuat laporan
+- Up di github
 
 Daud Rando Mudumi =
-Memberikan masukan terhadap desain tampilan dan alur sistem
+Menguji beberapa fitur dasar seperti login dan pemesanan untuk memastikan sistem berjalan dengan baik
 
 R.Ridwan Sulaiman = 
-Menguji beberapa fitur dasar seperti login dan pemesanan untuk memastikan sistem berjalan dengan baik
+-
 
 Additional Information =
 - Website belum ada domain, jadi untuk sementara akses aplikasi web lewat protokol HTTP di server dengan IP 46.250.230.45 pada port 3203
-- Link GitHub (Files) =
+- Link GitHub (Files) = https://github.com/Senremi7/PKM-Percetakan-UTS-AWP
+- Link Vercel (Hosting) = https://pkm-percetakan-uts-awp.vercel.app
 Catatan: Tidak termasuk file .env
 - Database juga berada di server, di dalam github akan berisi cuma file .sql sebagai acuan database kira" yang di online
 - Admin features = Home, Dashboard (Statistik), Products (CRUD+FILTER), Orders (CRUD), Reports (Filter+Print), Users (CRUD+FILTER)
