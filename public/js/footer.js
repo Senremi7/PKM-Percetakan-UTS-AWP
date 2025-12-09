@@ -76,7 +76,7 @@ function renderFooter() {
           </div>
           <div class="mt-4 md:mt-0">
             <p class="text-gray-300 text-sm">
-              AHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIHIH
+              LOREM IPSUM
             </p>
           </div>
         </div>
@@ -94,3 +94,4 @@ document.addEventListener('DOMContentLoaded', () => {
     footerElement.appendChild(renderFooter());
   }
 });
+
