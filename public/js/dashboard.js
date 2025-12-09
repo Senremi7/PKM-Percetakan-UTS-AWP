@@ -23,7 +23,7 @@ if (user.role === 'admin') {
       { title: 'Pengiriman', value: statusMap.get('pengiriman') || 0, icon: '🚚', color: 'purple' },
       { title: 'Menunggu Pembayaran', value: statusMap.get('menunggu pembayaran') || 0, icon: '💳', color: 'red' },
       { title: 'Selesai', value: statusMap.get('selesai') || 0, icon: '✅', color: 'green' },
-      { title: 'Revenue Today', value: `Rp ${Number(sum.revenue_today||0).toLocaleString('id-ID')}`, icon: '💰', color: 'emerald' }
+     // { title: 'Revenue Today', value: `Rp ${Number(sum.revenue_today||0).toLocaleString('id-ID')}`, icon: '💰', color: 'emerald' }
     ];
     
     // Update stats cards
@@ -59,4 +59,5 @@ const menus = await fetchJSON('/api/menus');
   } catch (e) {
     location.href = '/login';
   }
+
 })();
